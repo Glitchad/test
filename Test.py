@@ -1,1 +1,1 @@
-def(yo)
+print("Blablabla")
