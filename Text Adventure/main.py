@@ -4,20 +4,17 @@ class Entity:
         self.health = health
         self.attack_damage = attack_damage
         self.items = items
-        return
 
     def Attack(self):
         self.health -= self.attack_damage
         print(
             f"You took {self.attack_damage} damage. Your health is now: {self.health}."
         )
-        return self.Attack()
 
     def Presentation(self):
         print(
             f"Health: {self.health}. Attack damage: {self.attack_damage}. Items: {self.items}."
         )
-        return
 
 
 COMMANDS = {
