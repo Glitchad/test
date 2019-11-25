@@ -1,16 +1,17 @@
 class Entity:
-    def __init__(self, health, attack_damage, items):
+    def __init__(self, name, health, attack_damage, items):
+        self.name = name
         self.health = health
         self.attack_damage = attack_damage
         self.items = items
         return
 
-    def doDamage(self):
+    def Attack(self):
         self.health -= self.attack_damage
         print(
             f"You took {self.attack_damage} damage. Your health is now: {self.health}."
         )
-        return
+        return self.Attack()
 
     def Presentation(self):
         print(
@@ -19,20 +20,27 @@ class Entity:
         return
 
 
+COMMANDS = {
+    "A": ("Attack", Entity.Attack),
+    "P": ("Pick up"),
+    "U": ("Use"),
+    "N": ("North",),
+    "E": ("East",),
+    "S": ("South",),
+    "W": ("West",),
+}
+
+
 class Player(Entity):
     pass
+
+p = Player("", 10, 3, 0)
 
 
 class Enemy(Entity):
     pass
 
+e = Enemy("", 5, 2, 0)
 
 class NPC(Entity):
     pass
-
-Ogre = Enemy(5, 2, 0)
-
-MainPlayer = Player(10, 3, 0)
-
-
-MainPlayer.Presentation()
