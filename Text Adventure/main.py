@@ -31,11 +31,11 @@ COMMANDS = {
 class Player(Entity):
     pass
 
-p = Player("", 10, 3, 0)
+p = Player(input("Enter your name: "), 10, 3, 0)
 
 
 class Enemy(Entity):
-    pass
+    EnemyVarieties = ("sad skeleton", "gnarly ghoul", "ghastly ghost")
 
 e = Enemy("", 5, 2, 0)
 
