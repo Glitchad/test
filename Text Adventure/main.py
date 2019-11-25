@@ -1,3 +1,5 @@
+import random
+
 class Entity:
     def __init__(self, name, health, attack_damage, items):
         self.name = name
@@ -35,7 +37,9 @@ p = Player(input("Enter your name: "), 10, 3, 0)
 
 
 class Enemy(Entity):
-    EnemyVarieties = ("sad skeleton", "gnarly ghoul", "ghastly ghost")
+    EnemyVarieties = ("a disharmonious harmonica", "a terrible terror", "an appalling apparation")
+    Enemy1 = random.choice(EnemyVarieties)
+    print(Enemy1)
 
 e = Enemy("", 5, 2, 0)
 
