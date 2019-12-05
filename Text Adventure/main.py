@@ -1,26 +1,26 @@
-import random
+from random import choice
 
-class Entity:
+class entity:
     def __init__(self, name, health, attack_damage, items):
         self.name = name
         self.health = health
         self.attack_damage = attack_damage
         self.items = items
 
-    def Attack(self):
+    def attack(self):
         self.health -= self.attack_damage
         print(
             f"You took {self.attack_damage} damage. Your health is now: {self.health}."
         )
 
-    def Presentation(self):
+    def presentation(self):
         print(
-            f"Health: {self.health}. Attack damage: {self.attack_damage}. Items: {self.items}."
+            f"Health: {self.health}. attack damage: {self.attack_damage}. Items: {self.items}."
         )
 
 
 COMMANDS = {
-    "A": ("Attack", Entity.Attack),
+    "A": ("attack", entity.attack),
     "P": ("Pick up"),
     "U": ("Use"),
     "N": ("North",),
@@ -30,18 +30,20 @@ COMMANDS = {
 }
 
 
-class Player(Entity):
+class player(entity):
     pass
 
-p = Player(input("Enter your name: "), 10, 3, 0)
+p = player(input("Enter your name: "), 10, 3, 0)
 
 
-class Enemy(Entity):
-    EnemyVarieties = ("a disharmonious harmonica", "a terrible terror", "an appalling apparation")
-    Enemy1 = random.choice(EnemyVarieties)
-    print(Enemy1)
+class enemy(entity):
+    enemy_varieties = ("a disharmonious harmonica", "a terrible terror", "an appalling apparation")
+    enemy1 = choice(enemy_varieties)
+    print(enemy1)
 
-e = Enemy("", 5, 2, 0)
+e = enemy("", 5, 2, 0)
 
-class NPC(Entity):
+e.presentation()
+
+class Npc(entity):
     pass
