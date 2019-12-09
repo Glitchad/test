@@ -1,5 +1,6 @@
 from random import choice
 
+
 class entity:
     def __init__(self, name, health, attack_damage, items):
         self.name = name
@@ -31,19 +32,27 @@ COMMANDS = {
 
 
 class player(entity):
-    pass
+    super().__init__()
 
-p = player(input("Enter your name: "), 10, 3, 0)
+    def pick_up(self):
+        pass
+
+    def use(self):
+        pass
+
+    def movement(self):
+        pass
 
 
 class enemy(entity):
-    enemy_varieties = ("a disharmonious harmonica", "a terrible terror", "an appalling apparation")
+    enemy_varieties = (
+        "a disharmonious harmonica",
+        "a terrible terror",
+        "an appalling apparation",
+    )
     enemy1 = choice(enemy_varieties)
     print(enemy1)
 
-e = enemy("", 5, 2, 0)
-
-e.presentation()
 
 class Npc(entity):
     pass
