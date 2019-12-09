@@ -1,4 +1,5 @@
 from entity import entity
+from random import choice
 
 class enemy(entity):
     enemy_varieties = (
