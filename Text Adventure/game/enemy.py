@@ -1,7 +1,5 @@
 """#details enemy class module"""
-
 from random import choice
-
 from entity import Entity
 
 
