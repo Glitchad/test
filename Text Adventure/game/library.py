@@ -1,8 +1,7 @@
-from random import choice
-from entity import entity
+from entity import Entity
 
 COMMANDS = {
-    "A": ("attack", entity.attack),
+    "A": ("attack", Entity.attack),
     "P": ("Pick up"),
     "U": ("Use"),
     "N": ("North",),

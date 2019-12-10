@@ -1,4 +1,4 @@
-class entity:
+class Entity:
     def __init__(self, name, health, attack_damage, items):
         self.name = name
         self.health = health

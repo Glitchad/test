@@ -1,5 +1,5 @@
-from entity import entity
+from entity import Entity
 
 
-class Npc(entity):
+class Npc(Entity):
     pass
