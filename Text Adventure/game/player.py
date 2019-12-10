@@ -1,12 +1,15 @@
+"""details the player module"""
 from entity import Entity
 
 
 class Player(Entity):
+    """details the player subclass"""
+
     def pick_up(self):
-        pass
+        """details the "pick_up" method"""
 
     def use(self):
-        pass
+        """details the "use" method"""
 
     def movement(self):
-        pass
+        """details the "movement" method"""

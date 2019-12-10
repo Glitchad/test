@@ -1,3 +1,4 @@
+"""sets up project entry points"""
 from setuptools import setup
 
 setup(

@@ -1,3 +1,5 @@
+"""library for methods"""
+
 from entity import Entity
 
 COMMANDS = {

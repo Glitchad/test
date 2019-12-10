@@ -1,5 +1,7 @@
+"""details the npc module"""
+
 from entity import Entity
 
 
 class Npc(Entity):
-    pass
+    """details the npc subclass"""
