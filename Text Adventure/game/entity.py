@@ -10,7 +10,6 @@ class Entity:
         self.__attack_damage = attack_damage
         self.__items = items
 
-    @property
     def attack(self):
         """defines attacks"""
         self.__health -= self.__attack_damage
@@ -19,9 +18,8 @@ class Entity:
         )
         return self.attack
 
-    @property
     def presentation(self):
         """lets one present an entity's properties"""
         print(
-            f"Health: {self.__health}. attack damage: {self.__attack_damage}. Items: {self.__items}."
+            f"Name: {self.__name}. Health: {self.__health}. attack damage: {self.__attack_damage}. Items: {self.__items}."
         )

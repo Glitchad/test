@@ -1,3 +1,4 @@
+from random import choice
 from player import Player
 from enemy import Enemy
 

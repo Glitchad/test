@@ -11,5 +11,3 @@ class Enemy(Entity):
         "a terrible terror",
         "an appalling apparation",
     )
-    enemy1 = choice(enemy_varieties)
-    print(enemy1)
