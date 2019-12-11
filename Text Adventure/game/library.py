@@ -24,7 +24,7 @@ ROOM_DICT = {
         "RM001",
         "alchemy lab",
         "The lab is full of dusty lab equipment and horrifying experiments.",
-        {Item.name("IT001")},
-        None
+        {ITEM_DICT.get("IT001")},
+        None,
     )
 }

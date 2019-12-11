@@ -1,6 +1,8 @@
-"""
-p = Player(input("Enter your name: "), 10, 3, 0)
+from player import Player
+from enemy import Enemy
 
-e = Enemy("", 5, 2, 0)
+P = Player(input("Enter your name: "), 10, 3, 0)
 
-e.presentation()"""
+E = Enemy("", 5, 2, 0)
+
+P.presentation()

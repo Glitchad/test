@@ -25,4 +25,3 @@ class Entity:
         print(
             f"Health: {self.__health}. attack damage: {self.__attack_damage}. Items: {self.__items}."
         )
-        return self.presentation
