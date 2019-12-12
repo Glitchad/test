@@ -1,10 +1,11 @@
 """library for methods"""
 from item import Item
 from room import Room
-from entity import Entity
+from player import Player
+from enemy import Enemy
 
 COMMANDS = {
-    "A": ("attack", Entity.attack),
+    "A": ("attack", Player.attack),
     "P": ("Pick up"),
     "U": ("Use"),
     "N": ("North",),
@@ -27,4 +28,9 @@ ROOM_DICT = {
         {ITEM_DICT.get("IT001")},
         None,
     )
+}
+
+ENEMY_DICT = {
+    "EN001": Enemy("EN001", "ghastly ghoul", 10, 3, None),
+    "EN002": Enemy("EN002", "scary skeleton", 7, 2, None),
 }
